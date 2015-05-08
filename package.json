@@ -1,0 +1,22 @@
+{
+  "name": "keymirror-nested",
+  "version": "1.0.0",
+  "description": "relate with https://github.com/STRML/keyMirror and make it nestable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filenwind/keymirror-nested.git"
+  },
+  "keywords": [
+    "keymirror"
+  ],
+  "author": "filenwind",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filenwind/keymirror-nested/issues"
+  },
+  "homepage": "https://github.com/filenwind/keymirror-nested#readme"
+}
