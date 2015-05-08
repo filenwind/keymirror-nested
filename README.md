@@ -4,8 +4,9 @@ relate with https://github.com/STRML/keyMirror and make it nestable
 
 ## usage
 
-keyMirrorNested = require('keymirror-nested');
+```json
 
+keyMirrorNested = require('keymirror-nested');
 
 var constants = keyMirrorNested({
     USER:{
@@ -20,9 +21,12 @@ var constants = keyMirrorNested({
     }
 });
 
+```
+
 
 ## You also can custom glue and prefix like:
 
+```json
 
 obj = {
     USER:{
@@ -40,9 +44,10 @@ obj = {
     }
 };
 
-var glue = 'BAR';
-var prefix = 'FOO';
+var glue = 'FOO';
+var prefix = 'BAR';
 
 
 var constants = keyMirrorNested(obj, glue, prefix);
-        
+
+```
