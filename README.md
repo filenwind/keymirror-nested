@@ -11,8 +11,11 @@ keyMirrorNested = require('keymirror-nested');
 var constants = keyMirrorNested({
     USER:{
         FAVORITES:{
-            MUSIC:{
+            MUSICS:{
                 ADD: null
+            },
+            GAMES:{
+                DELETE: null
             }
         },
         PROFILE:{
@@ -21,20 +24,39 @@ var constants = keyMirrorNested({
     }
 });
 
+
+
+where constants will look like:
+
+USER:{
+    FAVORITES:{
+        MUSICS:{
+            ADD: "USER_FAVORITES_MUSICS_ADD"
+        },
+        GAMES:{
+            DELETE: "USER_FAVORITES_GAMES_DELETE"
+        }
+    },
+    PROFILE:{
+        EDIT_NAME: "USER_PROFILE_EDIT_NAME"
+    }
+}
+
+
 ```
 
 
-## You also can custom glue and prefix like:
+## You also can custom glue and prefix:
 
 ```json
 
 obj = {
     USER:{
         FAVORITES:{
-            MUSIC:{
+            MUSICS:{
                 ADD: null
             },
-            GAME:{
+            GAMES:{
                 DELETE: null
             }
         },
@@ -44,10 +66,29 @@ obj = {
     }
 };
 
-var glue = 'FOO';
-var prefix = 'BAR';
+var glue = '-';
+var prefix = 'FOO';
 
 
 var constants = keyMirrorNested(obj, glue, prefix);
+
+
+where constants will look like:
+
+
+USER:{
+    FAVORITES:{
+        MUSICS:{
+            ADD: "FOO-USER-FAVORITES-MUSICS-ADD"
+        },
+        GAMES:{
+            DELETE: "FOO-USER-FAVORITES-GAMES-DELETE"
+        }
+    },
+    PROFILE:{
+        EDIT_NAME: "FOO-USER-PROFILE-EDIT_NAME"
+    }
+}
+
 
 ```
