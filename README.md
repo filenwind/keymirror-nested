@@ -79,10 +79,10 @@ where constants will look like:
 USER:{
     FAVORITES:{
         MUSICS:{
-            ADD: "FOO-USER-FAVORITES-MUSICS-ADD"
+            ADD: "FOO+USER+FAVORITES+MUSICS+ADD"
         },
         GAMES:{
-            DELETE: "FOO-USER-FAVORITES-GAMES-DELETE"
+            DELETE: "FOO+USER+FAVORITES+GAMES+DELETE"
         }
     },
     PROFILE:{
