@@ -1,6 +1,6 @@
 {
   "name": "keymirror-nested",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "relate with https://github.com/STRML/keyMirror and make it nestable",
   "main": "index.js",
   "scripts": {

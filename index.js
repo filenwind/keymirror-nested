@@ -6,7 +6,7 @@ var keyMirrorNested = function(obj, glue, prefix) {
   
     
     prefix = typeof prefix === 'undefined' ? '':prefix;
-    glue = typeof glue === 'undefined' ? '_':glue;
+    glue = typeof glue === 'undefined' ? '-':glue;
     
     if (!(obj instanceof Object && !Array.isArray(obj))) {
         throw new Error('keyMirror(...): Argument must be an object.');

@@ -31,14 +31,14 @@ where constants will look like:
 USER:{
     FAVORITES:{
         MUSICS:{
-            ADD: "USER_FAVORITES_MUSICS_ADD"
+            ADD: "USER-FAVORITES-MUSICS-ADD"
         },
         GAMES:{
-            DELETE: "USER_FAVORITES_GAMES_DELETE"
+            DELETE: "USER-FAVORITES-GAMES-DELETE"
         }
     },
     PROFILE:{
-        EDIT_NAME: "USER_PROFILE_EDIT_NAME"
+        EDIT_NAME: "USER-PROFILE-EDIT_NAME"
     }
 }
 
@@ -66,7 +66,7 @@ obj = {
     }
 };
 
-var glue = '-';
+var glue = '+';
 var prefix = 'FOO';
 
 
@@ -86,7 +86,7 @@ USER:{
         }
     },
     PROFILE:{
-        EDIT_NAME: "FOO-USER-PROFILE-EDIT_NAME"
+        EDIT_NAME: "FOO+USER+PROFILE+EDIT_NAME"
     }
 }
 
