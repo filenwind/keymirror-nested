@@ -2,7 +2,7 @@
 var keyMirrorNested = function(obj, glue, prefix) {
     var ret = {};
     var key;
-    var key_join;
+    var key_prefix;
   
     
     prefix = typeof prefix === 'undefined' ? '':prefix;
